@@ -41,6 +41,21 @@
 .teaser {
   flex-basis: 180%;
   background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .btn-play {
+    border-style: solid;
+    border-width: 40px 0 40px 70px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+
+    &:hover {
+      border-left-color: $light-blue;
+      cursor: pointer;
+    }
+  }
 }
 
 .info {
