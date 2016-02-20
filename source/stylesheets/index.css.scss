@@ -50,9 +50,10 @@
     border-style: solid;
     border-width: 40px 0 40px 70px;
     border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+    transition: transform .1s ease;
 
     &:hover {
-      border-left-color: $light-blue;
+      transform: scale(1.05);
       cursor: pointer;
     }
   }
