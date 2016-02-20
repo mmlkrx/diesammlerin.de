@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "fonts";
 @import "normalize";
 @import "variables";
 @import "reset";
@@ -26,9 +27,14 @@
   align-items: flex-end;
 
   h1 {
-    font-size: 12.5vw;
+    padding-left: 1.7%;
+    font-size: 11.2vw;
     text-align: center;
     margin: 0;
+    position: relative;
+    top: 2rem;
+    font-weight: 100;
+    letter-spacing: .7rem;
   }
 }
 
@@ -49,5 +55,21 @@
   p, a {
     flex-basis: 100%;
   }
+}
 
+@media screen and (max-width:875px) {
+  .title {
+    h1 {
+      top: 1rem;
+      font-size: 10.5vw;
+    }
+  }
+}
+
+@media screen and (max-width:540px) {
+  .title {
+    h1 {
+      top: .2rem;
+    }
+  }
 }
