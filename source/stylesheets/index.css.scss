@@ -13,38 +13,32 @@
   align-items: stretch;
 }
 
-.title,
-.teaser,
-.info {
-  flex-grow: 1;
-}
-
 .title {
-  flex-basis: 30%;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: flex-end;
 
   h1 {
-    padding-left: 1.7%;
+    padding-left: .7%;
     font-size: 11.2vw;
     text-align: center;
     margin: 0;
     position: relative;
-    top: 2rem;
+    top: 2.5rem;
     font-weight: 100;
     letter-spacing: .7rem;
   }
 }
 
 .teaser {
-  flex-basis: 180%;
   background: black;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  min-height: 600px;
 
   .btn-play {
     border-style: solid;
@@ -60,13 +54,14 @@
 }
 
 .info {
-  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  height: 20vh;
+  font-size: 20px;
 }
 
 @media screen and (max-width:875px) {
