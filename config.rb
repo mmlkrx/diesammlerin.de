@@ -9,6 +9,10 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 10']
+end
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
