@@ -33,22 +33,19 @@
 
 .teaser {
   background: black;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex: 1;
 
-  .btn-play {
-    border-style: solid;
-    border-width: 40px 0 40px 70px;
-    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
-    transition: transform .1s ease;
-
-    &:hover {
-      transform: scale(1.05);
-      cursor: pointer;
-    }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 }
 
