@@ -28,3 +28,9 @@ eval "$(ssh-agent)"
 ```
 
 `ssh-agent` is running now and you can add a private key to be able to automatically deploy to Github. This is a bad solution and should be updated once socket sharing between mac and docker containers works properly.
+
+To deploy with middleman, run:
+
+```shell
+middleman deploy
+```
