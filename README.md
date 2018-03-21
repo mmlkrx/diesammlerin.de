@@ -6,6 +6,14 @@ More information about the short film can be found on its [facebook page](https:
 
 The website is deployed to Github pages with middleman deploy.
 
+Start a container by pulling from docker hub:
+
+```shell
+docker run --rm -it -v "$(pwd)":/app mmlkrx/sammlerin:latest /bin/sh
+```
+
+Or build from the dockerfile:
+
 ```shell
 docker build -t sammlerin:latest .
 docker run --rm -it -v "$(pwd)":/app sammlerin:latest /bin/sh
